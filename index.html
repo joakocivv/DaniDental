@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DaniDental - Odontología familiar y estética en Buenos Aires. Atención de urgencias y tratamientos especializados con tecnología de vanguardia.">
+    <meta name="keywords" content="dentista, odontología, urgencias dentales, implantes, ortodoncia, Buenos Aires">
+    
+    <title>DaniDental | Odontología Familiar y Estética en Buenos Aires</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Nunito+Sans:wght@400;600;700&family=Fraunces:ital,wght@1,400&display=swap" rel="stylesheet">
+    
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/danidental-isotipo-color.png">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="nav" aria-label="Navegación principal">
+                <a href="#" class="logo" aria-label="DaniDental - Inicio">
+                    <img src="assets/danidental-imagotipo-color.png" alt="DaniDental - Odontología familiar y estética" width="700" height="200" loading="eager">
+                </a>
+                
+                <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Abrir menú de navegación">
+                    <span class="hamburger"></span>
+                </button>
+                
+                <div class="nav-menu" id="navMenu">
+                    <ul class="nav-list">
+                        <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                        <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+                        <li><a href="#ubicacion" class="nav-link">Ubicación</a></li>
+                    </ul>
+                    <a href="#contacto" class="btn btn-primary nav-cta">Pedí tu turno</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <!-- Background Image (right side with fade effect) -->
+        <div class="hero-image-bg" aria-hidden="true"></div>
+        <!-- Fade gradient from text to image -->
+        <div class="hero-fade-overlay" aria-hidden="true"></div>
+        <!-- Background Pattern: Curva Sonrisa -->
+        <div class="hero-pattern" aria-hidden="true"></div>
+        <div class="deco-circle deco-circle--terracota" aria-hidden="true"></div>
+        <div class="deco-circle deco-circle--azul" aria-hidden="true"></div>
+        <div class="deco-circle deco-circle--marino" aria-hidden="true"></div>
+        <!-- Decorative Tooth SVG -->
+        <div class="deco-tooth deco-tooth--lg" style="top: 12%; right: 3%;" aria-hidden="true">
+            <svg viewBox="0 0 100 100" fill="currentColor" color="#C0785C">
+                <path d="M50 10 C 30 10, 15 25, 15 40 C 15 55, 25 65, 30 80 C 33 90, 40 92, 45 85 C 48 80, 50 80, 50 80 C 50 80, 52 80, 55 85 C 60 92, 67 90, 70 80 C 75 65, 85 55, 85 40 C 85 25, 70 10, 50 10 Z"/>
+            </svg>
+        </div>
+        <div class="deco-tooth deco-tooth--md" style="bottom: 8%; left: 2%; opacity: 0.08;" aria-hidden="true">
+            <svg viewBox="0 0 100 100" fill="currentColor" color="#1F3B57">
+                <path d="M50 10 C 30 10, 15 25, 15 40 C 15 55, 25 65, 30 80 C 33 90, 40 92, 45 85 C 48 80, 50 80, 50 80 C 50 80, 52 80, 55 85 C 60 92, 67 90, 70 80 C 75 65, 85 55, 85 40 C 85 25, 70 10, 50 10 Z"/>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <span class="eyebrow">Odontología en Buenos Aires</span>
+                    <h1 class="hero-title">
+                        Tu sonrisa merece
+                        <span class="italic-accent">cuidado experto</span>
+                    </h1>
+                    <p class="hero-description">
+                        En DaniDental combinamos la calidez de una práctica familiar con la precisión de la odontología estética moderna. Atención personalizada para toda la familia.
+                    </p>
+                    <div class="hero-ctas">
+                        <a href="#contacto" class="btn btn-primary btn-lg">
+                            <span>Reservar turno</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <a href="#servicios" class="btn btn-outline btn-lg">
+                            Conocer servicios
+                        </a>
+                    </div>
+                    <div class="hero-trust">
+                        <div class="trust-chip">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                                <path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                            <span>Atención en el día</span>
+                        </div>
+                        <div class="trust-chip">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Tecnología de vanguardia</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Floating Badge over the image -->
+        <div class="hero-badge-floating" aria-label="Más de 15 años de experiencia">
+            <div class="badge-content">
+                <span class="badge-number">+15</span>
+                <span class="badge-text">años de experiencia</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section (Bifocal Strategy) -->
+    <section class="services" id="servicios">
+        <!-- Background Pattern: Dots Grid -->
+        <div class="bg-pattern services-pattern" aria-hidden="true">
+            <div class="dot-grid"></div>
+        </div>
+        <!-- Decorative smile curves -->
+        <svg class="deco-smile deco-smile--left" viewBox="0 0 300 150" aria-hidden="true">
+            <path d="M0,75 Q75,0 150,75 T300,75" fill="none" stroke="#C0785C" stroke-width="3" stroke-linecap="round"/>
+            <path d="M0,95 Q75,30 150,95 T300,95" fill="none" stroke="#A2C4C9" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <svg class="deco-smile deco-smile--right" viewBox="0 0 300 150" aria-hidden="true">
+            <path d="M0,75 Q75,0 150,75 T300,75" fill="none" stroke="#1F3B57" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <div class="container">
+            <div class="section-header">
+                <span class="eyebrow">Nuestros servicios</span>
+                <h2 class="section-title">
+                    Soluciones para cada
+                    <span class="italic-accent">necesidad</span>
+                </h2>
+                <p class="section-description">
+                    Ya sea que necesites atención inmediata o estés planeando un tratamiento a largo plazo, tenemos la experiencia y tecnología para acompañarte.
+                </p>
+            </div>
+
+            <!-- Track Urgente Cards -->
+            <div class="services-track">
+                <h3 class="track-title">
+                    Atención inmediata
+                </h3>
+                <div class="services-grid">
+                    <article class="service-card">
+                        <div class="service-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 6v6l4 2"/>
+                            </svg>
+                        </div>
+                        <h4 class="service-title">Urgencias dentales</h4>
+                        <p class="service-description">
+                            Atención en el día para dolor agudo, traumatismos o emergencias. Turnos disponibles de lunes a sábados.
+                        </p>
+                        <a href="#contacto" class="service-link" aria-label="Solicitar turno para urgencias dentales">
+                            Solicitar turno
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 11H5a2 2 0 00-2 2v7a2 2 0 002 2h14a2 2 0 002-2v-7a2 2 0 00-2-2h-4M9 11V5a2 2 0 012-2h2a2 2 0 012 2v6M9 11h6"/>
+                            </svg>
+                        </div>
+                        <h4 class="service-title">Odontología general</h4>
+                        <p class="service-description">
+                            Controles, limpiezas, restauraciones y prevención. Cuidado integral para mantener tu salud bucal.
+                        </p>
+                        <a href="#contacto" class="service-link" aria-label="Consultar sobre odontología general">
+                            Consultar
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Track Nutrición Cards -->
+            <div class="services-track">
+                <h3 class="track-title">
+                    Tratamientos especializados
+                </h3>
+                <div class="services-grid">
+                    <article class="service-card service-card--image">
+                        <div class="service-image">
+                            <img src="assets/implante-dental.webp" alt="Tratamiento de implante dental" loading="lazy" width="400" height="300">
+                        </div>
+                        <div class="service-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
+                        <h4 class="service-title">Implantes dentales</h4>
+                        <p class="service-description">
+                            Recupera la funcionalidad y estética de tu sonrisa con implantes de última generación y planificación digital 3D.
+                        </p>
+                        <a href="#contacto" class="service-link" aria-label="Consultar sobre implantes dentales">
+                            Conocer más
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </article>
+
+                    <article class="service-card service-card--image">
+                        <div class="service-image">
+                            <img src="assets/ortodoncia-invisible.webp" alt="Tratamiento de ortodoncia invisible" loading="lazy" width="400" height="300">
+                        </div>
+                        <div class="service-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="3" width="18" height="18" rx="2"/>
+                                <path d="M9 9h6v6H9z"/>
+                            </svg>
+                        </div>
+                        <h4 class="service-title">Ortodoncia invisible</h4>
+                        <p class="service-description">
+                            Alinea tus dientes de forma discreta con alineadores transparentes personalizados y seguimiento digital.
+                        </p>
+                        <a href="#contacto" class="service-link" aria-label="Consultar sobre ortodoncia invisible">
+                            Conocer más
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </article>
+
+                    <article class="service-card service-card--image">
+                        <div class="service-image">
+                            <img src="assets/estética-dental.webp" alt="Tratamiento de estética dental" loading="lazy" width="400" height="300">
+                        </div>
+                        <div class="service-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/>
+                            </svg>
+                        </div>
+                        <h4 class="service-title">Estética dental</h4>
+                        <p class="service-description">
+                            Blanqueamientos, carillas y diseño de sonrisa. Transformamos tu imagen con resultados naturales y duraderos.
+                        </p>
+                        <a href="#contacto" class="service-link" aria-label="Consultar sobre estética dental">
+                            Conocer más
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </article>
+
+                    <article class="service-card service-card--image">
+                        <div class="service-image">
+                            <img src="assets/odontopediatría.webp" alt="Atención de odontopediatría" loading="lazy" width="400" height="300">
+                        </div>
+                        <div class="service-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+                            </svg>
+                        </div>
+                        <h4 class="service-title">Odontopediatría</h4>
+                        <p class="service-description">
+                            Atención especializada para los más pequeños en un ambiente cálido y amigable. Creamos hábitos saludables desde temprano.
+                        </p>
+                        <a href="#contacto" class="service-link" aria-label="Consultar sobre odontopediatría">
+                            Conocer más
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </article>
+
+                    <article class="service-card service-card--image">
+                        <div class="service-image">
+                            <img src="assets/ortodoncia-brackets.webp" alt="Tratamiento de ortodoncia con brackets" loading="lazy" width="400" height="300">
+                        </div>
+                        <div class="service-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="8" width="18" height="8" rx="1"/>
+                                <line x1="7" y1="8" x2="7" y2="16"/>
+                                <line x1="12" y1="8" x2="12" y2="16"/>
+                                <line x1="17" y1="8" x2="17" y2="16"/>
+                                <line x1="3" y1="12" x2="21" y2="12"/>
+                            </svg>
+                        </div>
+                        <h4 class="service-title">Ortodoncia con brackets</h4>
+                        <p class="service-description">
+                            Alineamos tu sonrisa con brackets tradicionales y estéticos. Planificación personalizada para resultados precisos y predecibles.
+                        </p>
+                        <a href="#contacto" class="service-link" aria-label="Consultar sobre ortodoncia con brackets">
+                            Conocer más
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </article>
+
+                    <article class="service-card service-card--image">
+                        <div class="service-image">
+                            <img src="assets/periodoncia.webp" alt="Tratamiento de periodoncia" loading="lazy" width="400" height="300">
+                        </div>
+                        <div class="service-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2C8 2 5 5 5 9c0 2 1 4 2 5.5V18a2 2 0 002 2h6a2 2 0 002-2v-3.5c1-1.5 2-3.5 2-5.5 0-4-3-7-7-7z"/>
+                                <path d="M9 22v-2M15 22v-2"/>
+                            </svg>
+                        </div>
+                        <h4 class="service-title">Periodoncia</h4>
+                        <p class="service-description">
+                            Cuidamos la salud de tus encías. Tratamientos para gingivitis, periodontitis y mantenimiento periodontal preventivo.
+                        </p>
+                        <a href="#contacto" class="service-link" aria-label="Consultar sobre periodoncia">
+                            Conocer más
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="nosotros">
+        <!-- Background Pattern: Smile Curves -->
+        <div class="bg-pattern about-pattern" aria-hidden="true">
+            <svg viewBox="0 0 1200 600" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+                <path d="M-100,300 Q300,100 600,300 T1300,300" class="smile-curve smile-curve--terracota" stroke-width="3" opacity="0.5"/>
+                <path d="M-100,400 Q400,200 800,400 T1400,400" class="smile-curve smile-curve--azul" stroke-width="2.5" opacity="0.4"/>
+                <path d="M-50,500 Q350,300 700,500 T1350,500" class="smile-curve smile-curve--marino" stroke-width="1.5" opacity="0.25"/>
+                <circle cx="200" cy="150" r="80" fill="#C0785C" opacity="0.1"/>
+                <circle cx="1000" cy="450" r="100" fill="#A2C4C9" opacity="0.12"/>
+                <circle cx="600" cy="300" r="50" fill="#1F3B57" opacity="0.06"/>
+            </svg>
+        </div>
+        <!-- Decorative blobs -->
+        <div class="deco-blob deco-blob--1" aria-hidden="true"></div>
+        <div class="deco-blob deco-blob--2" aria-hidden="true"></div>
+        <div class="container">
+            <div class="about-content">
+                <div class="about-visual">
+                    <img src="assets/grupo-dentistas.png" alt="Equipo de profesionales de DaniDental" class="about-image" loading="lazy" width="600" height="450">
+                    <div class="about-visual-accent" aria-hidden="true"></div>
+                </div>
+                <div class="about-text">
+                    <span class="eyebrow">Sobre DaniDental</span>
+                    <h2 class="section-title">
+                        Más que una clínica,
+                        <span class="italic-accent">tu lugar de confianza</span>
+                    </h2>
+                    <p class="about-description">
+                        Somos un equipo de profesionales apasionados por la odontología, comprometidos con brindar atención de excelencia en un ambiente cálido y familiar.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <div class="feature-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/>
+                                    <circle cx="12" cy="7" r="4"/>
+                                </svg>
+                            </div>
+                            <div class="feature-content">
+                                <h4 class="feature-title">Equipo especializado</h4>
+                                <p class="feature-description">Profesionales con formación continua y años de experiencia en sus áreas.</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                                    <line x1="8" y1="21" x2="16" y2="21"/>
+                                    <line x1="12" y1="17" x2="12" y2="21"/>
+                                </svg>
+                            </div>
+                            <div class="feature-content">
+                                <h4 class="feature-title">Tecnología avanzada</h4>
+                                <p class="feature-description">Equipamiento de última generación para diagnósticos precisos y tratamientos eficaces.</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+                                </svg>
+                            </div>
+                            <div class="feature-content">
+                                <h4 class="feature-title">Atención personalizada</h4>
+                                <p class="feature-description">Cada paciente es único. Diseñamos planes de tratamiento a medida según tus necesidades.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <span class="stat-number" data-target="2500">0</span>
+                            <span class="stat-label">Pacientes atendidos</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number" data-target="15">0</span>
+                            <span class="stat-label">Años de experiencia</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number" data-target="98">0</span>
+                            <span class="stat-suffix">%</span>
+                            <span class="stat-label">Satisfacción</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="location" id="ubicacion">
+        <!-- Background Pattern: Waves -->
+        <div class="bg-pattern location-pattern" aria-hidden="true">
+            <svg viewBox="0 0 1200 400" width="100%" height="100%" preserveAspectRatio="none">
+                <path d="M0,200 Q300,100 600,200 T1200,200 L1200,400 L0,400 Z" fill="#A2C4C9" opacity="0.2"/>
+                <path d="M0,250 Q400,150 800,250 T1200,250 L1200,400 L0,400 Z" fill="#1F3B57" opacity="0.1"/>
+                <path d="M0,300 Q500,220 1000,300 T1200,320 L1200,400 L0,400 Z" fill="#C0785C" opacity="0.06"/>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="section-header">
+                <span class="eyebrow">Ubicación</span>
+                <h2 class="section-title">
+                    Encontranos en
+                    <span class="italic-accent">El Talar</span>
+                </h2>
+                <p class="section-description">
+                    Te esperamos en nuestra clínica ubicada en Gral. Pacheco 29131, B1618 El Talar, Provincia de Buenos Aires.
+                </p>
+            </div>
+            <div class="location-content">
+                <div class="location-info">
+                    <div class="location-card">
+                        <div class="location-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
+                        <div class="location-details">
+                            <h3 class="location-title">Dirección</h3>
+                            <p class="location-address">Gral. Pacheco 29131</p>
+                            <p class="location-city">B1618 El Talar, Provincia de Buenos Aires</p>
+                        </div>
+                    </div>
+                    <div class="location-card">
+                        <div class="location-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 6v6l4 2"/>
+                            </svg>
+                        </div>
+                        <div class="location-details">
+                            <h3 class="location-title">Horarios de atención</h3>
+                            <p class="location-schedule">Lunes a Viernes: 9:00 - 20:00</p>
+                            <p class="location-schedule">Sábados: 9:00 - 14:00</p>
+                        </div>
+                    </div>
+                    <div class="location-card">
+                        <div class="location-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                            </svg>
+                        </div>
+                        <div class="location-details">
+                            <h3 class="location-title">Contacto</h3>
+                            <p class="location-phone"><a href="tel:+541112345678">+54 11 1234-5678</a></p>
+                            <p class="location-email"><a href="mailto:dani@lacabrabee.com.ar">dani@lacabrabee.com.ar</a></p>
+                        </div>
+                    </div>
+                    <a href="https://www.google.com/maps/dir//Tropitango+Bailable/@-34.478128999999996,-58.64924500000001" class="btn btn-primary btn-lg location-cta" target="_blank" rel="noopener noreferrer">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                        <span>Cómo llegar</span>
+                    </a>
+                </div>
+                <div class="location-map-wrapper">
+                    <div class="location-map">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3288.9723068448175!2d-58.64929864418031!3d-34.47822677690122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca35ec337eb7d%3A0x76ca904828f0805b!2sTropitango%20Bailable!5e0!3m2!1ses-419!2sar!4v1794285623649!5m2!1ses-419!2sar" 
+                      width="700" 
+                      height="550" 
+                      style="border:0;" 
+                      allowfullscreen="" 
+                      loading="lazy" 
+                      referrerpolicy="strict-origin-when-cross-origin">
+                      </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contacto">
+        <!-- Background Pattern: Geometric -->
+        <div class="bg-pattern contact-pattern" aria-hidden="true">
+            <svg viewBox="0 0 1200 800" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+                <defs>
+                    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+                        <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#1F3B57" stroke-width="0.5" opacity="0.2"/>
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#grid)"/>
+                <circle cx="100" cy="100" r="120" fill="#C0785C" opacity="0.08"/>
+                <circle cx="1100" cy="700" r="180" fill="#A2C4C9" opacity="0.1"/>
+                <circle cx="600" cy="400" r="60" fill="#1F3B57" opacity="0.05"/>
+            </svg>
+        </div>
+        <!-- Decorative shapes -->
+        <div class="deco-shape deco-shape--circle" aria-hidden="true"></div>
+        <div class="deco-shape deco-shape--ring" aria-hidden="true"></div>
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <span class="eyebrow">Contacto</span>
+                    <h2 class="section-title">
+                        Estamos para
+                        <span class="italic-accent">ayudarte</span>
+                    </h2>
+                    <p class="contact-description">
+                        Completá el formulario y nos pondremos en contacto a la brevedad para coordinar tu turno.
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">Dirección</span>
+                                <span class="contact-value">Gral. Pacheco 29131, B1618 El Talar, Provincia de Buenos Aires</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">Teléfono</span>
+                                <a href="tel:+541112345678" class="contact-value">+54 11 1234-5678</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">Email</span>
+                                <a href="mailto:dani@lacabrabee.com.ar" class="contact-value">dani@lacabrabee.com.ar</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M12 6v6l4 2"/>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">Horarios</span>
+                                <span class="contact-value">Lun-Vie: 9-20hs | Sáb: 9-14hs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm" novalidate>
+                        <div class="form-group">
+                            <label for="nombre" class="form-label">Nombre completo *</label>
+                            <input type="text" id="nombre" name="nombre" class="form-input" required aria-required="true">
+                            <span class="form-error" id="nombreError" role="alert"></span>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email *</label>
+                                <input type="email" id="email" name="email" class="form-input" required aria-required="true">
+                                <span class="form-error" id="emailError" role="alert"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="telefono" class="form-label">Teléfono *</label>
+                                <input type="tel" id="telefono" name="telefono" class="form-input" required aria-required="true">
+                                <span class="form-error" id="telefonoError" role="alert"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="servicio" class="form-label">Servicio de interés</label>
+                            <select id="servicio" name="servicio" class="form-select">
+                                <option value="">Seleccioná un servicio</option>
+                                <option value="urgencias">Urgencias dentales</option>
+                                <option value="general">Odontología general</option>
+                                <option value="implantes">Implantes dentales</option>
+                                <option value="ortodoncia">Ortodoncia invisible</option>
+                                <option value="estetica">Estética dental</option>
+                                <option value="pediatria">Odontopediatría</option>
+                                <option value="ortodoncia-brackets">Ortodoncia con brackets</option>
+                                <option value="periodoncia">Periodoncia</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" class="form-textarea" rows="4" placeholder="Contanos en qué podemos ayudarte..."></textarea>
+                        </div>
+                        <div class="form-group form-consent">
+                            <input type="checkbox" id="consent" name="consent" class="form-checkbox" required aria-required="true">
+                            <label for="consent" class="form-label-consent">
+                                Acepto la <a href="#">política de privacidad</a> y el tratamiento de mis datos *
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg btn-full">
+                            <span>Enviar consulta</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </form>
+                    <div class="form-success" id="formSuccess" style="display: none;">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                            <polyline points="22 4 12 14.01 9 11.01"/>
+                        </svg>
+                        <h3>¡Mensaje enviado!</h3>
+                        <p>Nos pondremos en contacto a la brevedad.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="assets/danidental-imagotipo-color.png" alt="DaniDental" class="footer-logo" width="420" height="120">
+                    <p class="footer-description">
+                        Odontología familiar y estética con atención personalizada y tecnología de vanguardia.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-title">Servicios</h4>
+                        <ul class="footer-list">
+                            <li><a href="#servicios">Urgencias dentales</a></li>
+                            <li><a href="#servicios">Implantes</a></li>
+                            <li><a href="#servicios">Ortodoncia</a></li>
+                            <li><a href="#servicios">Estética</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-title">Clínica</h4>
+                        <ul class="footer-list">
+                            <li><a href="#nosotros">Sobre nosotros</a></li>
+                            <li><a href="#ubicacion">Ubicación</a></li>
+                            <li><a href="#contacto">Contacto</a></li>
+                            <li><a href="#">Política de privacidad</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-title">Contacto</h4>
+                        <ul class="footer-list">
+                            <li>Gral. Pacheco 29131, El Talar</li>
+                            <li><a href="tel:+541112345678">+54 11 1234-5678</a></li>
+                            <li><a href="mailto:dani@lacabrabee.com.ar">dani@lacabrabee.com.ar</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    © 2026 DaniDental. Todos los derechos reservados.
+                </p>
+                <p class="footer-disclaimer">
+                    La información proporcionada en este sitio es de carácter informativo y no reemplaza la consulta profesional con un odontólogo matriculado.
+                </p>
+            </div>
+            <!-- Decorative isotipo watermark -->
+            <div class="footer-isotipo" aria-hidden="true">
+                <img src="assets/danidental-isotipo-color.png" alt="" width="400" height="400">
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/541112345678" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+        <span class="whatsapp-label" id="whatsappLabel">¿Urgencia odontológica? <span class="whatsapp-label-highlight">Chateá</span> con nosotros</span>
+        <svg viewBox="0 0 24 24" fill="#FFFFFF" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+    </a>
+
+    <!-- Scripts -->
+    <script src="scripts.js"></script>
+</body>
+</html>
